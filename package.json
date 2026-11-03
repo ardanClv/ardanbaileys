@@ -1,0 +1,72 @@
+{
+  "name": "ardanbaileys",
+  "version": "1.1.0",
+  "description": "Standalone WhatsApp Web multi-device library for Node.js, maintained by ardanClv.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "files": [
+    "lib/",
+    "WAProto/",
+    "config/",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "baileys",
+    "whatsapp",
+    "whatsapp-web",
+    "multi-device",
+    "whatsapp-api"
+  ],
+  "license": "MIT",
+  "author": "ardanClv",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ardanClv/ardanbaileys.git"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node -e \"import('./lib/index.js').then(() => console.log('ardanbaileys loaded successfully'))\"",
+    "test": "node --test test/channels.test.js"
+  },
+  "dependencies": {
+    "@cacheable/node-cache": "*",
+    "gradient-string": "2.0.2",
+    "libsignal-xeuka": "*",
+    "moment-timezone": "*",
+    "music-metadata": "*",
+    "cache-manager": "*",
+    "async-mutex": "*",
+    "@hapi/boom": "*",
+    "pbjs": "^0.0.14",
+    "protobufjs": "*",
+    "lru-cache": "*",
+    "p-queue": "*",
+    "lodash": "*",
+    "figlet": "*",
+    "axios": "*",
+    "pino": "*",
+    "ws": "*"
+  },
+  "peerDependencies": {
+    "link-preview-js": "*",
+    "audio-decode": "*",
+    "jimp": ">=0.16.0"
+  },
+  "peerDependenciesMeta": {
+    "audio-decode": {
+      "optional": true
+    },
+    "jimp": {
+      "optional": true
+    },
+    "link-preview-js": {
+      "optional": true
+    }
+  }
+}

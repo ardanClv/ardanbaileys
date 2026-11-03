@@ -34,7 +34,7 @@ See [LICENSE](./LICENSE). Existing copyright and license notices in the source a
 
 ## ARDAN author identity and startup banner
 
-The package prints the ARDAN startup banner once when it is first imported in a Node.js process. At startup it fetches `config/author.json` from the `main` branch of this repository. If GitHub cannot be reached, it falls back to the bundled `config/author.json`.
+The banner is no longer printed on import. Call `printBanner()` from your bot when it is connected (SaydenGuard does this after pairing). `printBanner()` fetches `config/author.json` from the `main` branch of this repository. If GitHub cannot be reached, it falls back to the bundled `config/author.json`.
 
 To change the author shown by every bot using this package, edit only `config/author.json` in this GitHub repository:
 
@@ -48,7 +48,7 @@ To change the author shown by every bot using this package, edit only `config/au
 }
 ```
 
-After the change is committed, restart a bot process and the banner will fetch the latest GitHub values. A network connection to `raw.githubusercontent.com` is needed for the latest values; otherwise the local bundled values are used. This remote identity fetch is separate from updating the Baileys source code itself.
+After the change is committed, restart a bot process and the next `printBanner()` call will fetch the latest GitHub values. A network connection to `raw.githubusercontent.com` is needed for the latest values; otherwise the local bundled values are used. This remote identity fetch is separate from updating the Baileys source code itself.
 
 ### Shared command log
 

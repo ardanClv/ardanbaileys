@@ -38,12 +38,12 @@ Call `printBanner()` from your bot once it is connected. It prints the panda ban
 
 ```json
 {
-  "brand": "DIEZYXHAO BAILEYS",
+  "brand": "ARDAN BAILEYS",
   "greeting": "Haloo, selamat menggunakan",
-  "creator": "diezy clutch",
-  "instagram": "rnzdzy_",
-  "whatsapp": "https://wa.me/6283165835004",
-  "telegram": "t.me/seannanvy"
+  "creator": "ardan wut wut",
+  "instagram": "ardan_ocean",
+  "whatsapp": "https://wa.me/6287792339461",
+  "telegram": "t.me/ardanFnaf"
 }
 ```
 
